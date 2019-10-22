@@ -1,10 +1,48 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html>
-<head>
+    <head>
     <title>Consultadd Python Training</title>
-</head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
 <body>
-<h1>This is a template file</h1>
-{{ name }}  //2 curly braces represent Template tagging and injection
+    <div class = "container">
+        <div class ="jumbotron">
+            <h1 class = "display-5">
+                CONSULTADD PYTHON TRAINING<br />
+                Batch - September 18<br />
+                For Navigation ~ /login/
+            </h1>
+        </div>
+    </div>
+    <div class = "container featurette">
+        <hr class ="featurette-divider">
+        <div class ="row featuretter">
+            <div class ="col-md-7">
+                <h2 class ="featuretter-heading">Candidate - Nikita Bajracharya</h2>
+                <p style="text-align:justify;">My name is Nikita Bajracharya. I am originally from Nepal. I came to United States of America with a goal to pursue my career in Biology, but after few semesters I got attracted towards
+                Technology and programming world. So, I changed my major to Computer Science. This field helped me to learn many skills from time management and decision making to critical thinking. I love my works, and will continue to do more.
+                I am a recent Computer Science student graduate </p>
+                <h3>College Projects</h3>
+                <ul style="list-style-type:disc;">
+                    <li>Worked in a group of 7 students to develop WWW application “Gator-Trade” using modern teamwork, SE processes and tools. My role was a Front-end Developer.</li>
+                    <li>Implemented Lisp Expression and Simple Calculator.</li>
+                    <li>Implemented Simple Shell design using C.</li>
+                </ul>
+                <a href="https://www.linkedin.com/in/nikita-bajracharya-801234103/">My LinkedIn Profile</a>
+            </div>
+            <div class="col-md-5">
+                <img class=""featurette-image img-fluid  mx-auto" src="{% static 'images/niki.jpg' %}" style="transform:rotate(90deg);width: 500px;  padding:50px 0;" alt="Developer Profile Photo">
+            </div>
+        </div>
+    </div>
+
+
+    {{ name }}
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
