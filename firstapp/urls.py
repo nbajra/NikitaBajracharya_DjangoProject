@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from rulingapp.views import landing
+from rulingapp.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',landing,name='landingpage'),
+    path('',home,name='home'),
 ]
